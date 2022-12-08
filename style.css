@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+body {
+  font-family: 'Mulish', sans-serif;
+}
+main {
+  background: rgb(237, 187, 191);
+  background: linear-gradient(
+      63deg,
+      rgba(237, 187, 191, 1) 0%,
+      rgba(241, 239, 248, 1) 53%,
+      rgba(189, 202, 244, 1) 100%
+    )
+    no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout {
+  background-color: rgba(245, 247, 255, 0.85);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* width: 1080px;
+  height: 435px; */
+  padding: 50px 60px;
+  margin: 0px 10px;
+  gap: 50px;
+}
+.img-container {
+  border-radius: 10px;
+}
+
+.text-container h2 {
+  font-weight: 800;
+  color: #2d2d2d;
+  font-size: 48px;
+  /* Could not find font-family: ' Abdoullah Ashgar EL-kharef'; on google fonts 
+  and didnt want to download any suspicious malware files that contain the font for free */
+}
+
+.text-container p {
+  color: #1f1249;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 45px 0px;
+}
+.blue-btn {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(
+    113.87deg,
+    #2663df 14.81%,
+    #758ff0 88.76%
+  );
+  border: none;
+  box-shadow: 0px 6px 18px #9cadf2;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.7s all;
+}
+.blue-btn:hover {
+  transform: scale(1.1);
+}
+.sign-up-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 60px;
+  gap: 60px;
+  background: rgba(245, 247, 255, 0.85);
+  border-radius: 10px;
+}
+.sign-up-img-container img {
+  width: 450px;
+  height: 536px;
+}
+.sign-up-container h2 {
+  color: #2d2d2d;
+  font-weight: 600;
+  font-size: 42px;
+  text-transform: capitalize;
+  margin: 30px 0px 40px 0px;
+}
+.sign-up-container p {
+  margin: 50px 0px;
+  font-size: 24px;
+  color: #1f1249;
+  max-width: 450px;
+}
+.inputs-container {
+  margin: 50px 0px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+i {
+  color: #9cadf2;
+  font-size: 20px;
+  padding-right: 10px;
+  border-right: 1px #d0caff solid;
+}
+.input-group input {
+  border: none;
+}
+.input-group input::placeholder {
+  color: black;
+}
+@media screen and (max-width: 1098px) {
+  .sign-up {
+    height: 100%;
+    /* padding: 30px; */
+    /* text-align: center; */
+  }
+  .sign-up-container {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0px;
+  }
+}
+@media screen and (max-width: 925px) {
+  .layout {
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    border-radius: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .layout {
+    padding: 30px 40px;
+  }
+  .layout h2 {
+    font-size: 42px;
+  }
+  .layout p {
+    font-size: 16px;
+  }
+  .blue-btn {
+    font-size: 16px;
+  }
+  .img-container img {
+    width: 315px;
+    height: 315px;
+  }
+  .sign-up-container img {
+    width: 315px;
+    height: 315px;
+  }
+  .sign-up-container h2 {
+    font-size: 42px;
+  }
+  .sign-up-container p {
+    font-size: 16px;
+  }
+  .sign-up-form input {
+    font-size: 16px;
+  }
+  .welcome-text-container {
+    text-align: center;
+  }
+  .welcome-text-container h2 {
+    font-size: 32px;
+  }
+  .welcome-text-container p {
+    font-size: 16px;
+  }
+}
