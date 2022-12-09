@@ -73,14 +73,18 @@ main {
   justify-content: center;
   align-items: center;
   padding: 40px 60px;
-  gap: 60px;
+  gap: 100px;
   background: rgba(245, 247, 255, 0.85);
   border-radius: 10px;
+  width: 1500px;
+  height: 800px;
+  margin: 10px;
 }
 .sign-up-img-container img {
-  width: 450px;
-  height: 536px;
+  width: 550px;
+  height: 636px;
 }
+
 .sign-up-container h2 {
   color: #2d2d2d;
   font-weight: 600;
@@ -119,7 +123,21 @@ i {
 .input-group input::placeholder {
   color: black;
 }
+.alert {
+  max-width: 700px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
 @media screen and (max-width: 1098px) {
+  .sign-up-img-container img {
+    width: 450px;
+    height: 536px;
+  }
+  .sign-up-form {
+    width: fit-content;
+  }
   .sign-up {
     height: 100%;
     /* padding: 30px; */

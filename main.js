@@ -42,11 +42,11 @@ const postDataHandler = () => {
     .then((res) => res.json())
     .then((res) => {
       if (res.errors) {
-        return console.log(res.errors);
+        return res.errors;
       } else {
         location.href = '/welcome.html';
         localStorage.setItem('userInfo', JSON.stringify(res));
-        return console.log(res);
+        return res;
       }
     });
 };
@@ -68,7 +68,6 @@ const nameCheckHandler = () => {
     username.value.match(usernameRegex) &&
     usernameLetterValidation() === true
   ) {
-    console.log('Username Passed');
     usernameError.classList.add('d-none');
     return true;
   } else {
@@ -78,7 +77,6 @@ const nameCheckHandler = () => {
 
 const emailCheckHandler = () => {
   if (String(email.value).toLowerCase().match(emailRegex)) {
-    console.log('Email Passed');
     emailError.classList.add('d-none');
     return true;
   } else {
@@ -88,22 +86,18 @@ const emailCheckHandler = () => {
 
 const passwordCheckHandler = () => {
   if (password.value.match(passwordRegex)) {
-    console.log('Password Passed');
     passwordError.classList.add('d-none');
     return true;
   } else {
-    console.log('Wrong Password Format ');
     passwordError.classList.remove('d-none');
   }
 };
 
 const passwordConfirmationCheckHandler = () => {
   if (password.value === passwordConfirmation.value) {
-    console.log('Password Confirmation Passed');
     passwordConfirmationError.classList.add('d-none');
     return true;
   } else {
-    console.log('Passwords do not match!');
     passwordConfirmationError.classList.remove('d-none');
   }
 };
@@ -137,7 +131,6 @@ const formSubmitHandler = (e) => {
   }
 
   clearInputsHandler();
-  console.log('Hello World');
 };
 
 // Eventlisteners
